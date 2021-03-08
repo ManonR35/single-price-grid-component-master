@@ -1,0 +1,147 @@
+@font-face{
+    font-family: 'karla';
+    src: url(font/Karla-Regular.ttf);
+}
+
+/* global */ 
+
+body{
+    margin: 0;
+    font-family: 'karla', sans-serif;
+}
+
+header, .section1, .section2{
+    padding: 30px;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+}
+
+h2{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.title_green{
+    color: hsl(71, 73%, 54%);
+}
+
+header p{
+    color: hsl(218, 22%, 67%);
+    line-height: 30px;
+}
+
+/* SECTION 1 */
+
+.section1{
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+}
+
+.tarif{
+    font-size: 30px;
+}
+
+span{
+    color: hsla(203, 44%, 93%, 0.596);
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+button{
+    outline: none;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 10px gray;
+    margin-top: 20px;
+}
+
+/* SECTION 2 */
+
+.section2{
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(179, 60%, 49%);
+}
+
+
+
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li{
+    line-height: 22px;
+}
+
+/* footer */ 
+
+.attribution{
+    background-color: hsl(218, 22%, 67%);
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* media queries */ 
+
+@media only screen and (min-width: 400px){
+    header, .section1, .section2{
+        text-align: center;
+    }
+} 
+
+@media only screen and (min-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+    }
+
+    header, .section1, .section2{
+        text-align: start;
+        height: 308px; 
+    }
+
+    header{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    /* 
+    .section1, .section2{
+        position: fixed;
+        bottom: 22px;
+        height: 30%; 
+    } */ 
+
+    .section1{
+        grid-column: 1/ 2;
+        grid-row: 2 / 3;
+        /* width: 50%;
+        left: 0; */ 
+    }
+
+    .section2{
+        grid-column: 2/ 3;
+        grid-row: 2 / 3;
+        /* width: 50%;
+        right: 0; */ 
+    } */
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
